@@ -28,7 +28,7 @@
 .benefits {display: flex; flex-direction: column;}
 .benefits__item:not(:last-child) {margin-bottom: 30px;}
 .benefits__icon-container{width: 450px;}
-.benefits__title{justify-content: center;}
+.benefits__title{display: flex; justify-content: center;align-items: center;}
 }
 
 @media screen and (min-width:768px) {

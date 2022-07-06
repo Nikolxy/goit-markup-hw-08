@@ -32,13 +32,13 @@
         <ul class="header-list list   ">
             <li class="header-list__item"><a class="header-list__link link" href="mailto:info@devstudio.com"> <svg
                         class="header-list__icon" Width="16px" height="12px">
-                        <use href="./image/sprite.svg#icon-envelope"></use>
+                        <use href="./images/sprite.svg#icon-envelope"></use>
                     </svg> info@devstudio.com </a>
         
             </li>
             <li class="header-list__item"><a class="header-list__link link" href="tel:+380961111111"><svg
                         class="header-list__icon" Width="10px" height="16px">
-                        <use href="./image/sprite.svg#icon-smartphone"></use>
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a>
             </li>
         </ul>
@@ -61,7 +61,36 @@
                         <li class="portfolio__item  containet-bg ">
                             <a href="" class="portfolio__link link ">
                                 <div class="portfolio__img-wrapper">
-                                    <img src="./image/portfolio-image/portfolio-img1.jpg" width="370" height="294" alt="Веб-сайт">
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source srcset="
+                                                            ./images/desktop/portfolio/techno-crack.webp    1x,
+                                                            ./images/desktop/portfolio/techno-crack@2x.webp 2x
+                                                          " media="(min-width: 1200px)" type="image/webp" />
+                                        <source srcset="
+                                                            ./images/desktop/portfolio/techno-crack.jpg    1x,
+                                                            ./images/desktop/portfolio/techno-crack@2x.jpg 2x
+                                                          " media="(min-width: 1200px)" type="image/jpeg" />
+                                        <!-- Tablet -->
+                                        <source srcset="
+                                                            ./images/tablet/portfolio/techno-crack-tablet.webp    1x,
+                                                            ./images/tablet/portfolio/techno-crack-tablet@2x.webp 2x
+                                                          " media="(min-width: 768px)" type="image/webp" />
+                                        <source srcset="
+                                                            ./images/tablet/portfolio/techno-crack-tablet.jpg    1x,
+                                                            ./images/tablet/portfolio/techno-crack-tablet@2x.jpg 2x
+                                                          " media="(min-width: 768px)" type="image/jpeg" />
+                                        <!-- Mobile -->
+                                        <source srcset="
+                                                            ./images/mobile/portfolio/techno-crack-mobile.webp    1x,
+                                                            ./images/mobile/portfolio/techno-crack-mobile@2x.webp 2x
+                                                          " media="(max-width: 767px)" type="image/webp" />
+                                        <source srcset="
+                                                            ./images/mobile/portfolio/techno-crack-mobile.jpg    1x,
+                                                            ./images/mobile/portfolio/techno-crack-mobile@2x.jpg 2x
+                                                          " media="(max-width: 767px)" type="image/jpeg" />
+                                        <img src="./images/mobile/portfolio/techno-crack-mobile.jpg" alt="Веб-сайт" />
+                                    </picture>
                                 <p class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -74,7 +103,36 @@
                         <li class="portfolio__item  containet-bg">
                             <a href="" class="portfolio__link link">
                                  <div class="portfolio__img-wrapper">
-                            <img src="./image/portfolio-image/portfolio-img2.jpg" width="370" height="294" alt="Дизайн">
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source srcset="
+                                                            ./images/desktop/portfolio/poster.webp    1x,
+                                                            ./images/desktop/portfolio/poster@2x.webp 2x
+                                                          " media="(min-width: 1200px)" type="image/webp" />
+                                        <source srcset="
+                                                            ./images/desktop/portfolio/poster.jpg    1x,
+                                                            ./images/desktop/portfolio/poster@2x.jpg 2x
+                                                          " media="(min-width: 1200px)" type="image/jpeg" />
+                                        <!-- Tablet -->
+                                        <source srcset="
+                                                            ./images/tablet/portfolio/poster-tablet.webp    1x,
+                                                            ./images/tablet/portfolio/poster-tablet@2x.webp 2x
+                                                          " media="(min-width: 768px)" type="image/webp" />
+                                        <source srcset="
+                                                            ./images/tablet/portfolio/poster-tablet.jpg    1x,
+                                                            ./images/tablet/portfolio/poster-tablet@2x.jpg 2x
+                                                          " media="(min-width: 768px)" type="image/jpeg" />
+                                        <!-- Mobile -->
+                                        <source srcset="
+                                                            ./images/mobile/portfolio/poster-mobile.webp    1x,
+                                                            ./images/mobile/portfolio/poster-mobile@2x.webp 2x
+                                                          " media="(max-width: 767px)" type="image/webp" />
+                                        <source srcset="
+                                                            ./images/mobile/portfolio/poster-mobile.jpg    1x,
+                                                            ./images/mobile/portfolio/poster-mobile@2x.jpg 2x
+                                                          " media="(max-width: 767px)" type="image/jpeg" />
+                                        <img src="./images/mobile/portfolio/poster-mobile.jpg" alt="Дизайн" />
+                                    </picture>
                              <p class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -87,7 +145,35 @@
                         <li class="portfolio__item  containet-bg">
                             <a href="" class="portfolio__link link">
                                  <div class="portfolio__img-wrapper">
-                            <img src="./image/portfolio-image/portfolio-img3.jpg" width="370" height="294" alt="Приложение">
+                                    <!-- Desktop -->
+                                    <source srcset="
+                                                            ./images/desktop/portfolio/seafood.webp    1x,
+                                                            ./images/desktop/portfolio/seafood@2x.webp 2x
+                                                          " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                                                            ./images/desktop/portfolio/seafood.jpg    1x,
+                                                            ./images/desktop/portfolio/seafood@2x.jpg 2x
+                                                          " media="(min-width: 1200px)" type="image/jpeg" />
+                                    <!-- Tablet -->
+                                    <source srcset="
+                                                            ./images/tablet/portfolio/seafood-tablet.webp    1x,
+                                                            ./images/tablet/portfolio/seafood-tablet@2x.webp 2x
+                                                          " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                                                            ./images/tablet/portfolio/seafood-tablet.jpg    1x,
+                                                            ./images/tablet/portfolio/seafood-tablet@2x.jpg 2x
+                                                          " media="(min-width: 768px)" type="image/jpeg" />
+                                    <!-- Mobile -->
+                                    <source srcset="
+                                                            ./images/mobile/portfolio/seafood-mobile.webp    1x,
+                                                            ./images/mobile/portfolio/seafood-mobile@2x.webp 2x
+                                                          " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                                                            ./images/mobile/portfolio/seafood-mobile.jpg    1x,
+                                                            ./images/mobile/portfolio/seafood-mobile@2x.jpg 2x
+                                                          " media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/mobile/portfolio/seafood-mobile.jpg" alt="Приложение" />
+                                    </picture>
                              <p class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -100,7 +186,35 @@
                         <li class="portfolio__item containet-bg">
                             <a href="" class="portfolio__link link">
                                  <div class="portfolio__img-wrapper">
-                            <img src="./image/portfolio-image/portfolio-img4.jpg"  width="370" height="294" alt="Маркетинг-prime">
+                                    <!-- Desktop -->
+                                    <source srcset="
+                                                            ./images/desktop/portfolio/prime.webp    1x,
+                                                            ./images/desktop/portfolio/prime@2x.webp 2x
+                                                          " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                                                            ./images/desktop/portfolio/prime.jpg    1x,
+                                                            ./images/desktop/portfolio/prime@2x.jpg 2x
+                                                          " media="(min-width: 1200px)" type="image/jpeg" />
+                                    <!-- Tablet -->
+                                    <source srcset="
+                                                            ./images/tablet/portfolio/prime-tablet.webp    1x,
+                                                            ./images/tablet/portfolio/prime-tablet@2x.webp 2x
+                                                          " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                                                            ./images/tablet/portfolio/prime-tablet.jpg    1x,
+                                                            ./images/tablet/portfolio/prime-tablet@2x.jpg 2x
+                                                          " media="(min-width: 768px)" type="image/jpeg" />
+                                    <!-- Mobile -->
+                                    <source srcset="
+                                                            ./images/mobile/portfolio/prime-mobile.webp    1x,
+                                                            ./images/mobile/portfolio/prime-mobile@2x.webp 2x
+                                                          " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                                                            ./images/mobile/portfolio/prime-mobile.jpg    1x,
+                                                            ./images/mobile/portfolio/prime-mobile@2x.jpg 2x
+                                                          " media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/mobile/portfolio/prime-mobile.jpg" alt="Маркетинг-prime" />
+                                    </picture>
                              <p class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -113,7 +227,13 @@
                         <li class="portfolio__item  containet-bg ">
                             <a href="" class="portfolio__link link">
                                  <div class="portfolio__img-wrapper">
-                            <img src="./image/portfolio-image/portfolio-img5.jpg" width="370" height="294" alt="Приложение-boxes">
+                                    
+
+
+
+
+                                    
+                            <img src="./images/portfolio-image/portfolio-img5.jpg" width="370" height="294" alt="Приложение-boxes">
                              <p class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -126,7 +246,7 @@
                         <li class="portfolio__item  containet-bg ">
                             <a href="" class="portfolio__link link">
                                  <div class="portfolio__img-wrapper">
-                            <img src="./image/portfolio-image/portfolio-img6.jpg"  width="370" height="294" alt="Веб-сайт-Inspiration">
+                            <img src="./images/portfolio-image/portfolio-img6.jpg"  width="370" height="294" alt="Веб-сайт-Inspiration">
                              <p class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -139,7 +259,7 @@
                         <li class="portfolio__item containet-bg">
                             <a href="" class="portfolio__link link">
                                  <div class="portfolio__img-wrapper">
-                            <img src="./image/portfolio-image/portfolio-img7.jpg" width="370" height="294" alt="Дизайн-Издание">
+                            <img src="./images/portfolio-image/portfolio-img7.jpg" width="370" height="294" alt="Дизайн-Издание">
                              <p class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -152,7 +272,7 @@
                         <li class="portfolio__item  containet-bg">
                             <a href="" class="portfolio__link link">
                                  <div class="portfolio__img-wrapper">
-                            <img src="./image/portfolio-image/portfolio-img8.jpg" width="370" height="294" alt="Маркетинг-lab">
+                            <img src="./images/portfolio-image/portfolio-img8.jpg" width="370" height="294" alt="Маркетинг-lab">
                              <p class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -165,7 +285,7 @@
                         <li class="portfolio__item  containet-bg ">
                             <a href="" class="portfolio__link link">
                                  <div class="portfolio__img-wrapper">
-                            <img src="./image/portfolio-image/portfolio-img9.jpg" width="370" height="294" alt="Приложение-Growing Business">
+                            <img src="./images/portfolio-image/portfolio-img9.jpg" width="370" height="294" alt="Приложение-Growing Business">
                              <p class="portfolio__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -204,28 +324,28 @@
                 <li class="footer__social-item ">
                     <a href="" class="footer__social-link footer__social-link_instagram">
                         <svg class="footer__social-icon" width="20" height="20">
-                            <use href="./image/sprite.svg#icon-instagram"></use>
+                            <use href="./images/sprite.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer__social-item">
                     <a href="" class="footer__social-link footer__social-link_twitter">
                         <svg class="footer__social-icon" width="20" height="20">
-                            <use href="./image/sprite.svg#icon-twitter"></use>
+                            <use href="./images/sprite.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer__social-item">
                     <a href="" class="footer__social-link footer__social-link_facebook">
                         <svg class="footer__social-icon" width="20" height="20">
-                            <use href="./image/sprite.svg#icon-facebook"></use>
+                            <use href="./images/sprite.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer__social-item">
                     <a href="" class="footer__social-link footer__social-link_linkedin">
                         <svg class="footer__social-icon" width="20" height="20">
-                            <use href="./image/sprite.svg#icon-linkedin"></use>
+                            <use href="./images/sprite.svg#icon-linkedin"></use>
                         </svg>
                     </a>
                 </li>
@@ -241,7 +361,7 @@
                 </label>
                 <button type="submit" class="footer-form__button">Подписаться
                     <svg class="footer-form__button-icon" width="24" height="24">
-                        <use href="./image/sprite.svg#icon-icon-send"></use>
+                        <use href="./images/sprite.svg#icon-icon-send"></use>
                     </svg>
                 </button>
         
