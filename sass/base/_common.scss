@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.14;
+    font-size: 14px;
+}
+
