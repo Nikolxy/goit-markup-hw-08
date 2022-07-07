@@ -1180,14 +1180,7 @@ body {
 
 .companies {
   margin-top: 50px;
-}
-
-.companies__item {
-  width: 170px;
-  height: 92px;
-}
-.companies__item:not(:last-child) {
-  margin-right: 30px;
+  flex-wrap: wrap;
 }
 
 .companies__link {
@@ -1215,6 +1208,44 @@ body {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .companies__item {
+    width: 210px;
+    height: 92px;
+  }
+
+  .companies__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+
+  .companies__item:nth-of-type(-n+4) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .companies__item {
+    width: 226px;
+    height: 62px;
+  }
+
+  .companies__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+  .companies__item:nth-last-of-type(-n+3) {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .companies__item {
+    width: 170px;
+    height: 92px;
+  }
+
+  .companies__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .portfolio__box-list {
   display: flex;
   flex-wrap: wrap;
