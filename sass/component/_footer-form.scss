@@ -74,9 +74,10 @@
   
    @media screen and (max-width:1199px){
 .footer-form__box{display: flex;align-items: center;justify-content: center;margin-top: 60px;margin-left: auto;margin-right: auto;}
-.footer-form{flex-wrap: wrap;width: 100%;}
+.footer-form{flex-wrap: wrap;}
 .footer-form__field,.footer-form__box{width: 450px}
 .footer-form__button {margin-left: auto;margin-right: auto;margin-top: 20px;  }
+
    }
 
    @media screen and (min-width:1200px) {

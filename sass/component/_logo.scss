@@ -31,6 +31,22 @@
         }
     
 }
+        .footer__logo {
+            @include font (26px, 700, 31px);
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 0.03em;
+            color: var(--accent-color);
+    
+        }
+    
+        .footer__theme-light {
+            @include font (26px, 700, 31px);
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 0.03em;
+            color: var(--on-top-color);
+        }
+
+
 
 
 @media screen and  (max-width:767px){
@@ -42,20 +58,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px
+        
     }}
 
-    
-.footer__logo {
-    @include font (26px, 700, 31px);
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-}
-
-.footer__theme-light {
-    @include font (26px, 700, 31px);
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.03em;
-    color: var(--on-top-color);
-}
