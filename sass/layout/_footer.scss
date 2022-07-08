@@ -31,9 +31,9 @@
     color: var(--on-top-color);
 }
 
-// .footer__contact {
-//     margin-right: 70px;
-// }
+.footer__contact {
+    margin-right: 70px;
+}
 
 // .footer__main-list {
 //     display: flex;
@@ -59,6 +59,7 @@
         .footer__item:not(:first-child) {
             margin-top: 8px;
         }
+        
 
 }
 @media screen and (min-width:768px){
