@@ -345,6 +345,12 @@ body {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -455,7 +461,7 @@ body {
 .contact-form__checkbox:checked + .contact-form__checkbox-label::before {
   background-color: #2196F3;
   border: transparent;
-  background-image: url("../image/checkbox-image/checkbox-submit-image.svg");
+  background-image: url("../images/checkbox-image/checkbox-submit-image.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -489,6 +495,20 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1199px) {
+  .contact-form__checkbox-label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.1666666667;
+  }
+
+  .contact-form__title {
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}
 .footer-form {
   display: flex;
   flex-direction: row;
@@ -933,7 +953,7 @@ body {
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-image/bg-image.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-image/bg-image.jpg");
     background-size: cover;
     background-color: #C4C4C4;
     background-position: center;

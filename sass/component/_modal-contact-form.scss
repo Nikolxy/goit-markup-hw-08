@@ -103,7 +103,7 @@
 .contact-form__checkbox:checked+& {
         background-color: #2196F3;
         border: transparent;
-        background-image: url('../image/checkbox-image/checkbox-submit-image.svg');
+        background-image: url('../images/checkbox-image/checkbox-submit-image.svg');
         background-repeat: no-repeat;
         background-position: center;}
 
@@ -136,3 +136,12 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px; }
 }
+
+ @media screen and (max-width:1199px) {
+    .contact-form__checkbox-label{
+        @include font (12px, 400, 14px)
+    }
+        .contact-form__title {
+            height: 60px;
+            @include font (20px, 700, 30px);
+ }}
