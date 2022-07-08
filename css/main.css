@@ -1366,7 +1366,6 @@ body {
 @media screen and (max-width: 767px) {
   .companies__item {
     width: 210px;
-    height: 92px;
   }
 
   .companies__item:not(:nth-child(2n)) {
@@ -1380,7 +1379,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .companies__item {
     width: 226px;
-    height: 62px;
   }
 
   .companies__item:not(:nth-child(3n)) {
@@ -1394,7 +1392,6 @@ body {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .companies__item {
     width: 170px;
-    height: 92px;
   }
 
   .companies__item:not(:last-child) {
@@ -1404,16 +1401,31 @@ body {
 @media screen and (max-width: 767px) {
   .portfolio__item {
     width: 450px;
-  }
-
-  .portfolio__box-list {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .portfolio__item {
     display: flex;
   }
+
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .portfolio__item {
+    width: 354px;
+  }
+
+  .portfolio__title-box {
+    height: 146px;
+  }
+
+  .portfolio__item:not(:nth-child(2n)) {
+    margin-bottom: 30px;
+  }
+
+  .portfolio__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .portfolio__item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
@@ -1432,13 +1444,6 @@ body {
   box-sizing: border-box;
   border: 1px solid #EEEEEE;
   border-radius: 0px 0px 4px 4px;
-}
-
-.portfolio__item {
-  display: flex;
-}
-.portfolio__item:not(:nth-last-child(-n+3)) {
-  margin-bottom: 30px;
 }
 
 .portfolio__title {
