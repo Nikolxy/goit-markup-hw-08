@@ -51,10 +51,12 @@
 
 @media screen and  (max-width:767px){
     
-    .footer__logo,.footer__theme-light{@include font (24px, 700, 28px);}
+    .footer__logo{@include font (24px, 700, 28px);
+        margin-bottom: 20px;}
 
 }
-@media screen and (max-width:1199px) {.footer__logo {
+@media screen and (max-width:1199px) {
+    .footer__logo {
         display: flex;
         align-items: center;
         justify-content: center;

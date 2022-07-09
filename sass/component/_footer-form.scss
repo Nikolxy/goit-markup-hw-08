@@ -1,23 +1,23 @@
-.footer-form{display: flex;flex-direction: row;
+.footer-form{flex-direction: row;
     }
 
 .footer-form__field-title{
     @include font (14px,700,16px);
-    display: block;
+    display: flex;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #FFFFFF;    
 }
 
-.footer-form__field{width: 358px;}
+// .footer-form__field{}
 
 .footer-form-input{
     height: 50px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;}                    
 
-.footer-form__box{display: flex;flex-direction: column;width: 570px;}
+.footer-form__box{display: flex;flex-direction: column}
 
 .footer-form__E-mail{
     @include font (16px, 400, 20px);
@@ -36,7 +36,6 @@
                     text-transform: uppercase;
                     color: rgba(255, 255, 255, 0.6);}
 }
-
 
 
 .footer-form__button{
@@ -70,12 +69,19 @@
 .footer-form__button-icon{
     margin-left: 10px;
    }
+@media screen and (max-widht:767px) {
+    
 
+    
+}
   
    @media screen and (max-width:1199px){
-.footer-form__box{display: flex;align-items: center;justify-content: center;margin-top: 60px;margin-left: auto;margin-right: auto;}
+.footer-form__box{margin-top: 60px}
 .footer-form{flex-wrap: wrap;}
-.footer-form__field,.footer-form__box{width: 450px}
+.footer-form__field-title {
+    justify-content: center;
+}
+// .footer-form__field,.footer-form__box{width: 450px}
 .footer-form__button {margin-left: auto;margin-right: auto;margin-top: 20px;  }
 
    }
