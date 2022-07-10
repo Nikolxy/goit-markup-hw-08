@@ -178,18 +178,26 @@ body {
 }
 @media screen and (max-width: 767px) {
   .portfolio__btn-list {
-    flex-wrap: wrap;
     margin-bottom: 40px;
+    flex-wrap: wrap;
   }
 
   .portfolio__btn-item:nth-last-child(n+3) {
     margin-bottom: 15px;
+  }
+
+  .portfolio__btn-item:nth-last-child(n+2) {
+    margin-right: 8px;
   }
 }
 @media screen and (min-width: 768px) {
   .portfolio__btn-list {
     margin-bottom: 50px;
     justify-content: center;
+  }
+
+  .portfolio__btn-item:not(:last-child) {
+    margin-right: 8px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -199,10 +207,7 @@ body {
 }
 .portfolio__btn-list {
   display: flex;
-}
-
-.portfolio__btn-item:not(:last-child) {
-  margin-right: 9px;
+  width: 100%;
 }
 
 .portfolio__btn {
@@ -211,7 +216,7 @@ body {
   line-height: 1.875;
   font-family: "Roboto", sans-serif;
   border: transparent;
-  background: #F5F4FA;
+  background: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
   text-align: center;
@@ -863,10 +868,6 @@ body {
     color: var(--accent-color);
   }
 
-  .header-list__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
   .header-list__link {
     font-weight: 500;
     font-size: 14px;
@@ -888,6 +889,11 @@ body {
   }
   .header-list__link:hover .header-list__icon, .header-list__link:focus .header-list__icon {
     fill: var(--accent-color);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header-list__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1444,9 +1450,24 @@ body {
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
-    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
 
+  .portfolio__item:not(:last-child(2n)) {
+    margin-right: 30px;
+  }
+
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .portfolio__title-box {
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 1199px) {
   .portfolio__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1456,6 +1477,9 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
   .portfolio__item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
@@ -1472,8 +1496,12 @@ body {
   padding: 20px 24px;
   background: var(--on-top-color);
   box-sizing: border-box;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-radius: 0px 0px 4px 4px;
+}
+
+.portfolio__item {
+  display: flex;
 }
 
 .portfolio__title {
@@ -1508,7 +1536,7 @@ body {
   width: 100%;
   height: 100%;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 63px 24px;
   overflow: auto;
   transform: translateY(100%);

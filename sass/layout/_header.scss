@@ -98,9 +98,9 @@
     }
   }
 
-  .header-list__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
+  // .header-list__item:not(:last-child) {
+  //   margin-bottom: 10px;
+  // }
 
   .header-list__link {
     font-weight: 500;
@@ -127,6 +127,12 @@
     .header-list__link:focus & {
       fill: var(--accent-color);
     }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-list__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
