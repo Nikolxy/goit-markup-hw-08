@@ -1443,9 +1443,22 @@ body {
     margin-right: 30px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .portfolio__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .portfolio__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  .portfolio__item:not(:nth-child(2n)) {
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1465,15 +1478,6 @@ body {
 
   .portfolio__title-box {
     flex-grow: 1;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .portfolio__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  .portfolio__item:not(:nth-child(2n)) {
-    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
