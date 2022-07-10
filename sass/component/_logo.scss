@@ -1,65 +1,64 @@
-@media screen and (max-width:1199px) {
-    .logo {
-            @include font (24px, 700, 28px);
-            margin-right: 93px;
-            font-family: 'Raleway', sans-serif;
-            letter-spacing: 0.03em;
-            color: var(--accent-color);
-        }
-    
-        .logo__theme-dark {
-            @include font (24px, 700, 28px);
-            letter-spacing: 0.03em;
-            color: black;
-        }
-    
+@media screen and (max-width: 1199px) {
+  .logo {
+    @include font(24px, 700, 28px);
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+
+  .logo__theme-dark {
+    @include font(24px, 700, 28px);
+    letter-spacing: 0.03em;
+    color: black;
+  }
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
+  .logo {
+    @include font(26px, 700, 31px);
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
 
-    .logo {
-            @include font (26px, 700, 31px);
-            margin-right: 93px;
-            font-family: 'Raleway', sans-serif;
-            letter-spacing: 0.03em;
-            color: var(--accent-color);
-        }
-    
-        .logo__theme-dark {
-            @include font (26px, 700, 31px);
-            letter-spacing: 0.03em;
-            color: black;
-        }
-    
+  .logo__theme-dark {
+    @include font(26px, 700, 31px);
+    letter-spacing: 0.03em;
+    color: black;
+  }
 }
-        .footer__logo {
-            @include font (26px, 700, 31px);
-            font-family: 'Raleway', sans-serif;
-            letter-spacing: 0.03em;
-            color: var(--accent-color);
-    
-        }
-    
-        .footer__theme-light {
-            @include font (26px, 700, 31px);
-            font-family: 'Raleway', sans-serif;
-            letter-spacing: 0.03em;
-            color: var(--on-top-color);
-        }
-
-
-
-
-@media screen and  (max-width:767px){
-    
-    .footer__logo{@include font (24px, 700, 28px);
-        margin-bottom: 20px;}
-
+.footer__logo {
+  @include font(26px, 700, 31px);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
-@media screen and (max-width:1199px) {
-    .footer__logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }}
 
+.footer__theme-light {
+  @include font(26px, 700, 31px);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--on-top-color);
+}
+
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    @include font(24px, 700, 28px);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__logo {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and(min-width:1200px) {
+  .footer__logo {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+}
