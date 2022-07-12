@@ -995,7 +995,7 @@ body {
   max-width: 1600px;
   height: 400px;
   margin: 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/header-img-mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/header-img-mobile.jpg");
   background-size: cover;
   background-color: #c4c4c4;
   background-position: center;
@@ -1040,24 +1040,24 @@ body {
   .hero {
     width: 100%;
     height: 400px;
-    background-image: url(/images/mobile/header-img-mobile.jpg);
+    background-image: url(../images/mobile/header-img-mobile.jpg);
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/mobile/header-img-mobile@2x.jpg);
+    background-image: url(../images/mobile/header-img-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     width: 100%;
     height: 400px;
-    background-image: url(/images/tablet/header-img-tablet.jpg);
+    background-image: url(../images/tablet/header-img-tablet.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/tablet/header-img-tablet@2x.jpg);
+    background-image: url(../images/tablet/header-img-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1066,12 +1066,12 @@ body {
     padding-bottom: 200px;
     width: 100%;
     height: 600px;
-    background-image: url(/images/desktop/header-img.jpg);
+    background-image: url(../images/desktop/header-img.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/desktop/header-img@2x.jpg);
+    background-image: url(../images/desktop/header-img@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {

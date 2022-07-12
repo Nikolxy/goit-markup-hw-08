@@ -1,4 +1,4 @@
-<picture>
+<!-- <picture>
     <!-- Desktop -->
     <source srcset="
                     ./images/desktop/portfolio/ .webp        1x,
@@ -27,4 +27,4 @@
                     ./images/mobile/portfolio/ @2x.jpg        2x
                   " media="(max-width: 767px)" type="image/jpeg" />
     <img src="./images/mobile/portfolio/" alt="" />
-</picture>
+</picture> -->
